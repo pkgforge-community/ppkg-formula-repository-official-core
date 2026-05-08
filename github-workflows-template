@@ -24,7 +24,7 @@ jobs:
         - run: apk update
         - run: apk add curl g++ gfortran libc-dev linux-headers
 
-        - uses: actions/checkout@v4
+        - uses: actions/checkout@v5
 
         - if: matrix.flavor == 'sh'
           run: curl -LO https://raw.githubusercontent.com/leleliu008/ppkg/${{ github.ref_name }}/ppkg && chmod a+x ppkg
@@ -57,7 +57,7 @@ jobs:
         - run: apt -y update
         - run: apt -y install curl xz-utils g++ gfortran linux-headers-generic
 
-        - uses: actions/checkout@v4
+        - uses: actions/checkout@v5
 
         - if: matrix.flavor == 'sh'
           run: curl -LO https://raw.githubusercontent.com/leleliu008/ppkg/${{ github.ref_name }}/ppkg && chmod a+x ppkg
@@ -86,7 +86,7 @@ jobs:
     runs-on: macos-${{ matrix.tag }}
 
     steps:
-        - uses: actions/checkout@v4
+        - uses: actions/checkout@v5
 
         - if: matrix.flavor == 'sh'
           run: curl -LO https://raw.githubusercontent.com/leleliu008/ppkg/${{ github.ref_name }}/ppkg && chmod a+x ppkg
