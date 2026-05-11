@@ -1,7 +1,7 @@
 summary: A cross-platform build utility based on Lua
 web-url: https://xmake.io/
-src-url: https://github.com/xmake-io/xmake/releases/download/v3.0.8/xmake-v3.0.8.tar.gz
-src-sha: 73da077440d1327e24bc74da2888c418e589dc28966e6e6b5bd6e889721b2d07
+src-url: https://github.com/xmake-io/xmake/releases/download/v2.9.9/xmake-v2.9.9.tar.gz
+src-sha: e92505b83bc9776286eae719d58bcea7ff2577afe12cb5ccb279c81e7dbc702d
 license: Apache-2.0
 dep-pkg: libreadline
 bscript: core
