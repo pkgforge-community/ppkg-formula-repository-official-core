@@ -1,0 +1,21 @@
+summary: A C compiler using QBE as a backend
+src-url: https://github.com/michaelforney/cproc/archive/f66a661359a39e10af01508ad02429517b8460e3.tar.gz
+src-sha: 0998a6bfac3c1f1719151fb9e772a4a6a90c775c1332d0b02dcbadeca31e5b9b
+version: 20240427
+bsystem: gmake
+
+prepare: |
+    run ./configure \
+        --prefix="$PACKAGE_INSTALL_DIR" \
+        --target="$TARGET_TRIPLE" \
+        --with-cpp=cpp \
+        --with-as=as \
+        --with-ld=ld
+
+    cat > config.mk <<EOF
+    PREFIX=$PACKAGE_INSTALL_DIR
+    BINDIR=$PACKAGE_INSTALL_DIR/bin
+    CC=$CC
+    CFLAGS=$CFLAGS $CPPFLAGS
+    LDFLAGS=$LDFLAGS
+    EOF

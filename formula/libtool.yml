@@ -1,8 +1,8 @@
-summary: Generic library support script
+summary: A command-line tool to generate a library in a portable way
 git-url: https://git.savannah.gnu.org/git/libtool.git
 web-url: https://www.gnu.org/software/libtool
 src-url: https://ftp.gnu.org/gnu/libtool/libtool-2.5.4.tar.xz
 src-sha: f81f5860666b0bc7d84baddefa60d1cb9fa6fceb2398cc3baca6afaa60266675
 license: GPL-2.0-or-later
 dep-upp: gm4
-install: configure --enable-ltdl-install
+install: configure --disable-ltdl-install

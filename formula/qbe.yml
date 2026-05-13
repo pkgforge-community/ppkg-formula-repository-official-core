@@ -1,4 +1,5 @@
-summary: A simple C compiler backend
+summary: A lightweight compiler backend
+git-url: git://c9x.me/qbe.git
 web-url: https://c9x.me/compile/
 src-url: https://c9x.me/compile/release/qbe-1.2.tar.xz
 src-sha: a6d50eb952525a234bf76ba151861f73b7a382ac952d985f2b9af1df5368225d

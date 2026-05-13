@@ -9,6 +9,8 @@ dopatch: |
     if isCrossBuild ; then
         gsed -i 's|cf_ok_build_cc=unknown|cf_ok_build_cc=yes|' configure
 
+        gsed -i 's|,-stats,-lc||' configure
+
         if [ "$TARGET_PLATFORM_NAME" = openbsd ] ; then
             gsed -i 's|-Bshareable|-shared|g' configure
             export LD="$CC"

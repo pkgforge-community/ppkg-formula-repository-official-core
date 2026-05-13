@@ -2,9 +2,8 @@ linkage: shared
 summary: GNU binary tools for native development
 git-url: https://sourceware.org/git/binutils-gdb
 web-url: https://www.gnu.org/software/binutils/binutils.html
-src-url: https://ftp.gnu.org/gnu/binutils/binutils-2.43.1.tar.xz
-src-uri: https://sourceware.org/pub/binutils/releases/binutils-2.43.1.tar.xz
-src-sha: 13f74202a3c4c51118b797a39ea4200d3f6cfbe224da6d1d95bb938480132dfd
+src-url: https://ftp.gnu.org/gnu/binutils/binutils-2.46.0.tar.bz2
+src-sha: 0f3152632a2a9ce066f20963e9bb40af7cf85b9b6c409ed892fd0676e84ecd12
 license: GPL-2.0-or-later
 dep-pkg: libisl libmpc libz libzstd
 dep-upp: gm4 bison texinfo
