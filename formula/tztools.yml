@@ -1,0 +1,11 @@
+summary: timezone related tools
+src-url: https://github.com/eggert/tz/archive/refs/tags/2026b.tar.gz
+src-sha: bba53da7f6e4fd7739f464ca3356dd9dbe9730c0b098337049f1bbc956b87159
+version: 2026b
+
+install: |
+    gmakew clean
+    gmakew zic
+    gmakew zdump
+    gmakew tzselect
+    install_bins tzselect zic zdump
