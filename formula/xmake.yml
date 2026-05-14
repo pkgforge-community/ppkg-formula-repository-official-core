@@ -8,4 +8,4 @@ bscript: core
 
 prepare: run ln -s libncurses.a ../../lib/libcurses.a
 
-install: xmakew --charset=y --small=y --xml=y --demo=n --curses=y
+install: xmakew --tbox::charset=y --tbox::small=y --tbox::xml=y --tbox::demo=n --curses=y
