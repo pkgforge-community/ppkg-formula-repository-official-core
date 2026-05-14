@@ -12,6 +12,7 @@ install: |
     cmakew \
         -DWITH_TOOLS=ON \
         -DWITH_TESTS=OFF \
-        -DWITHOUT_PNG=OFF
+        -DWITHOUT_PNG=OFF \
+        -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     install_bins qrencode
     install_mans qrencode.1

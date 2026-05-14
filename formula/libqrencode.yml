@@ -9,4 +9,5 @@ install: |
     cmakew 2 \
         -DWITH_TOOLS=OFF \
         -DWITH_TESTS=OFF \
-        -DWITHOUT_PNG=ON
+        -DWITHOUT_PNG=ON \
+        -DCMAKE_POLICY_VERSION_MINIMUM=3.5
